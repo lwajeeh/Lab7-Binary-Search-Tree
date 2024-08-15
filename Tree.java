@@ -215,23 +215,11 @@ public class Tree<T extends Comparable<T>> {
       }
    }
 
-   //
    public void outputTree() { 
-   outputTreeHelper(root); 
+   outputTreeHelper(root,10); 
    }
 
 
-   private void outputTreeHelper(TreeNode<T> node) {
-   if (node == null) {
-       System.out.print("null");
-       return;
-   }
-     
-
-     outputTreeHelper(node.rightNode); // traverse left subtree
-     System.out.printf("%1$5s ", node.data); // output node data
-     outputTreeHelper(node.leftNode); // traverse left subtree
-    }
     
     //searches for value in sub tree and returns Boolean.
     public Boolean search(T insertValue) {

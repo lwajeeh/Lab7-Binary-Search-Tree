@@ -10,14 +10,14 @@ public class TreeTest {
   public static void main(String[] args) {
     Tree<Integer> tree = new Tree<>();
     System.out.println("Inserting the following values:\n4 10 32 3 95 5 40 42 1");
+    tree.insertNode(95);
     tree.insertNode(4);
     tree.insertNode(10);
-    tree.insertNode(32);
-    tree.insertNode(3);
-    tree.insertNode(95);
-    tree.insertNode(5);
     tree.insertNode(40);
     tree.insertNode(42);
+    tree.insertNode(32);
+    tree.insertNode(3);
+    tree.insertNode(5);
     tree.insertNode(1);
     System.out.println("Preorder Traversal");
     tree.preorderTraversal();
