@@ -19,7 +19,7 @@ public class TreeTest {
     tree.insertNode(3);
     tree.insertNode(5);
     tree.insertNode(1);
-    System.out.println("Preorder Traversal");
+    System.out.println("\nPreorder Traversal");
     tree.preorderTraversal();
     System.out.println("\n\nInorder Traversal");
     tree.inorderTraversal();
